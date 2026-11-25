@@ -12,9 +12,9 @@ A Home Assistant view that fits the screen exactly. No scrolling, nothing hangin
 edge, on any tablet or desktop, in portrait or landscape. On a phone it becomes Home
 Assistant's own sections view instead (see [On a phone](#on-a-phone)).
 
-> **Maturity: Beta.** Complete and used every day; its features have settled. Please report what breaks in your setup. ([The levels](https://github.com/gazoodle/casa-mia/blob/2026.11.12/docs/README.md#maturity))
+> **Maturity: Beta.** Complete and used every day; its features have settled. Please report what breaks in your setup. ([The levels](https://github.com/gazoodle/casa-mia/blob/2026.11.13/docs/README.md#maturity))
 
-<img src="https://raw.githubusercontent.com/gazoodle/casa-mia/2026.11.12/docs/screenshots/tablet-layout-default.webp" alt="A Tablet Layout view: a main panel with panels round it" width="800">
+<img src="https://raw.githubusercontent.com/gazoodle/casa-mia/2026.11.13/docs/screenshots/tablet-layout-default.webp" alt="A Tablet Layout view: a main panel with panels round it" width="800">
 
 It *is* Home Assistant's own Sections view, so the header, footer, badges, sections, cards,
 visibility conditions and card editors all work as you know them. What it adds is the
@@ -30,9 +30,9 @@ views ...
 **The same view on three screens.** Nothing was changed between these: the view simply fits.
 
 <table><tr>
-<td width="40%" valign="top"><img src="https://raw.githubusercontent.com/gazoodle/casa-mia/2026.11.12/docs/screenshots/tablet-layout-finished.webp" alt="The view at a tablet's size, landscape"><br>A tablet, landscape.</td>
-<td width="25%" valign="top"><img src="https://raw.githubusercontent.com/gazoodle/casa-mia/2026.11.12/docs/screenshots/tablet-layout-portrait.webp" alt="The same view narrow and tall, as an iPad held upright"><br>Portrait.</td>
-<td width="35%" valign="top"><img src="https://raw.githubusercontent.com/gazoodle/casa-mia/2026.11.12/docs/screenshots/tablet-layout-wide.webp" alt="The same view wide and short, as a desktop window"><br>A wide desktop window.</td>
+<td width="40%" valign="top"><img src="https://raw.githubusercontent.com/gazoodle/casa-mia/2026.11.13/docs/screenshots/tablet-layout-finished.webp" alt="The view at a tablet's size, landscape"><br>A tablet, landscape.</td>
+<td width="25%" valign="top"><img src="https://raw.githubusercontent.com/gazoodle/casa-mia/2026.11.13/docs/screenshots/tablet-layout-portrait.webp" alt="The same view narrow and tall, as an iPad held upright"><br>Portrait.</td>
+<td width="35%" valign="top"><img src="https://raw.githubusercontent.com/gazoodle/casa-mia/2026.11.13/docs/screenshots/tablet-layout-wide.webp" alt="The same view wide and short, as a desktop window"><br>A wide desktop window.</td>
 </tr></table>
 
 **Contents:** [Getting started](#getting-started) ·
@@ -55,7 +55,7 @@ see [By itself, without Casa Mia](#by-itself-without-casa-mia). Then:
    bottom edge round it, each with an empty section, named on its chip.
 4. Add cards to the panels as you would in any Sections view.
 
-<img src="https://raw.githubusercontent.com/gazoodle/casa-mia/2026.11.12/docs/screenshots/tablet-layout-default.webp" alt="A new Tablet Layout view in edit mode: four empty edges round main, with the dimension lines" width="800">
+<img src="https://raw.githubusercontent.com/gazoodle/casa-mia/2026.11.13/docs/screenshots/tablet-layout-default.webp" alt="A new Tablet Layout view in edit mode: four empty edges round main, with the dimension lines" width="800">
 
 That's a working layout. Every edge starts at a share of the screen (left and right 15% of its
 width, top 18% and bottom 20% of its height) and the main panel takes what's left. An
@@ -128,7 +128,7 @@ view_layout: { panel: right, layer: 2 }
 └─────────────── bottom (layer 1) ──────────────┘
 ```
 
-<img src="https://raw.githubusercontent.com/gazoodle/casa-mia/2026.11.12/docs/screenshots/tablet-layout-layers.webp" alt="Edit mode with a second layer: L2 LEFT and L2 TOP inside the outer edges, round MAIN · 2 LAYERS; the view grown outwards to make room" width="800">
+<img src="https://raw.githubusercontent.com/gazoodle/casa-mia/2026.11.13/docs/screenshots/tablet-layout-layers.webp" alt="Edit mode with a second layer: L2 LEFT and L2 TOP inside the outer edges, round MAIN · 2 LAYERS; the view grown outwards to make room" width="800">
 
 In edit mode a layer's panels are named on their chips (*L2 TOP*), main says how many layers there are, and the view grows outwards to make room, so it scrolls.
 
@@ -172,12 +172,12 @@ edge, for every panel in it:
 | `size: 120` with `unit: px` | Fixed, the same on any screen, but never more than 45% of the view: a small screen gets less. |
 | `size: auto` | **As its cards.** The edge is exactly as tall (or wide) as what its panels hold, and follows them as cards show and hide. The usual choice for a strip of tiles or buttons. |
 
-<img src="https://raw.githubusercontent.com/gazoodle/casa-mia/2026.11.12/docs/screenshots/tablet-layout-mid-build.webp" alt="Mid-build in edit mode: a picture filling main, a strip of tiles along the bottom, and the Bottom edge box set to as tall as its cards" width="800">
+<img src="https://raw.githubusercontent.com/gazoodle/casa-mia/2026.11.13/docs/screenshots/tablet-layout-mid-build.webp" alt="Mid-build in edit mode: a picture filling main, a strip of tiles along the bottom, and the Bottom edge box set to as tall as its cards" width="800">
 
 Changing between % and px on the edit surface keeps the edge the same size on the screen
 you're on: it converts the number for you.
 
-<img src="https://raw.githubusercontent.com/gazoodle/casa-mia/2026.11.12/docs/screenshots/tablet-layout-padlocks.webp" alt="Edit mode: the bottom edge's left padlock open, so it stops at the left edge; its right padlock closed, so it runs to the view's right side" width="800">
+<img src="https://raw.githubusercontent.com/gazoodle/casa-mia/2026.11.13/docs/screenshots/tablet-layout-padlocks.webp" alt="Edit mode: the bottom edge's left padlock open, so it stops at the left edge; its right padlock closed, so it runs to the view's right side" width="800">
 
 **Where the top and bottom edges end.** By default the bottom edge runs the full width of
 the view, under the left and right edges, and the top edge stops short of them, between
@@ -199,7 +199,7 @@ If they don't all fit, every panel but those filling shrinks alike. The last pan
 default so the edge reaches its end, and the corner locks have something to move. To pack
 them all as their cards instead, set the last one to **As its cards**.
 
-<img src="https://raw.githubusercontent.com/gazoodle/casa-mia/2026.11.12/docs/screenshots/tablet-layout-edge-stack.webp" alt="A top edge of three panels in edit mode, with the third panel's options open: as wide as its cards, held to the right" width="800">
+<img src="https://raw.githubusercontent.com/gazoodle/casa-mia/2026.11.13/docs/screenshots/tablet-layout-edge-stack.webp" alt="A top edge of three panels in edit mode, with the third panel's options open: as wide as its cards, held to the right" width="800">
 
 **Room over** (when none fills) is arranged by the edge's `arrange`: `start` (from the left
 or the top, the default), `centre`, or `end`. Choosing `centre` or `end` also turns off the
@@ -223,7 +223,7 @@ Spacing works like CSS's box model.
 - **Padding:** room inside a panel round its cards, to line them up with something else:
   `view_layout: { padding: 12 }`, or each side its own.
 
-<img src="https://raw.githubusercontent.com/gazoodle/casa-mia/2026.11.12/docs/screenshots/tablet-layout-gap-line.webp" alt="A 12 px gap between main and the bottom edge with a dashed line in it, and the Line box open" width="800">
+<img src="https://raw.githubusercontent.com/gazoodle/casa-mia/2026.11.13/docs/screenshots/tablet-layout-gap-line.webp" alt="A 12 px gap between main and the bottom edge with a dashed line in it, and the Line box open" width="800">
 
 A gap is only there while what makes it shows: hide an edge and its gap goes with it.
 
@@ -262,13 +262,13 @@ The layout follows what's showing, so conditional cards just work:
   `view_layout: { garnish: true }`.
 
   **On every Sections dashboard, too:** switch on **Enable garnish on all section
-  dashboards** on the Casa Mia panel's [Settings](https://github.com/gazoodle/casa-mia/blob/2026.11.12/docs/applets/settings.md) page (the cog by
+  dashboards** on the Casa Mia panel's [Settings](https://github.com/gazoodle/casa-mia/blob/2026.11.13/docs/applets/settings.md) page (the cog by
   the house photo), and garnish works in every section of every Sections dashboard, not
   only a Tablet Layout's panels. Home Assistant already hides a section whose cards are all
   hidden; with garnish, a section left with only garnish showing hides too, and the others
   take its room.
 
-  <img src="https://raw.githubusercontent.com/gazoodle/casa-mia/2026.11.12/docs/screenshots/tablet-layout-garnish.webp" alt="A right panel in edit mode: a Warnings heading as garnish, dimmed with a dashed outline and a filled sprig, over a Door tile as content with a plain sprig" width="274">
+  <img src="https://raw.githubusercontent.com/gazoodle/casa-mia/2026.11.13/docs/screenshots/tablet-layout-garnish.webp" alt="A right panel in edit mode: a Warnings heading as garnish, dimmed with a dashed outline and a filled sprig, over a Door tile as content with a plain sprig" width="274">
 
 - **An edge can be hidden** outright (`hidden: true`): no room, no cards, but its sections
   kept for when it's shown again.
@@ -291,8 +291,8 @@ The layout follows what's showing, so conditional cards just work:
 ```
 
 <table><tr>
-<td width="50%"><img src="https://raw.githubusercontent.com/gazoodle/casa-mia/2026.11.12/docs/screenshots/tablet-layout-warning-off.webp" alt="The door shut: no right edge, main takes the room"><br>The door shut: the warnings panel has no content showing, so the right edge takes no room.</td>
-<td width="50%"><img src="https://raw.githubusercontent.com/gazoodle/casa-mia/2026.11.12/docs/screenshots/tablet-layout-warning-on.webp" alt="The door open: the right edge appears with its Warnings heading and the door tile"><br>The door open: the right edge appears, and main makes room.</td>
+<td width="50%"><img src="https://raw.githubusercontent.com/gazoodle/casa-mia/2026.11.13/docs/screenshots/tablet-layout-warning-off.webp" alt="The door shut: no right edge, main takes the room"><br>The door shut: the warnings panel has no content showing, so the right edge takes no room.</td>
+<td width="50%"><img src="https://raw.githubusercontent.com/gazoodle/casa-mia/2026.11.13/docs/screenshots/tablet-layout-warning-on.webp" alt="The door open: the right edge appears with its Warnings heading and the door tile"><br>The door open: the right edge appears, and main makes room.</td>
 </tr></table>
 
 ## One card filling a panel
@@ -391,7 +391,7 @@ Edit mode shows the layout as a drawing you can click.
 - With more than one layer, edit mode grows outwards to make room for each layer's
   toolbars, and the view scrolls both ways. Out of edit mode it fits the screen again.
 
-<img src="https://raw.githubusercontent.com/gazoodle/casa-mia/2026.11.12/docs/screenshots/tablet-layout-edit.webp" alt="Edit mode with the dimension lines on: each panel's chip and size, the gaps, the margins, and the Main options box open" width="800">
+<img src="https://raw.githubusercontent.com/gazoodle/casa-mia/2026.11.13/docs/screenshots/tablet-layout-edit.webp" alt="Edit mode with the dimension lines on: each panel's chip and size, the gaps, the margins, and the Main options box open" width="800">
 
 Every box shows its change on the view as you make it. **Save** writes it, **Cancel**
 puts it back.
@@ -463,7 +463,7 @@ download it. It is a dashboard resource, which HACS calls the type Dashboard.
 
 It is one file, `casa-mia-tablet-layout.js`. It has the same view as Casa Mia's, with
 garnish, the [Over layer](#over-layer) and the Orientation choice in a dashboard's
-Screen condition ([Augmenting Home Assistant](https://github.com/gazoodle/casa-mia/blob/2026.11.12/docs/augmenting-home-assistant.md)). Casa Mia's
+Screen condition ([Augmenting Home Assistant](https://github.com/gazoodle/casa-mia/blob/2026.11.13/docs/augmenting-home-assistant.md)). Casa Mia's
 other cards are not in it.
 
 It has nothing to set. Two things that Casa Mia has switches for on its Settings page
@@ -502,7 +502,7 @@ When something doesn't sit where you expect:
   the views follow the switch while they're open.
 - **`debug: true`** in one view's config does both, for that view only.
 
-<img src="https://raw.githubusercontent.com/gazoodle/casa-mia/2026.11.12/docs/screenshots/tablet-layout-debug.webp" alt="Tablet Layout debugging on: the size label at top right reads view 1882 x 1343, room 1343, page scrolls 0 x 0" width="800">
+<img src="https://raw.githubusercontent.com/gazoodle/casa-mia/2026.11.13/docs/screenshots/tablet-layout-debug.webp" alt="Tablet Layout debugging on: the size label at top right reads view 1882 x 1343, room 1343, page scrolls 0 x 0" width="800">
 
 A page that still scrolls by a pixel or two on a wall tablet is often the tablet's WebView
 being slightly larger than its screen; a small margin fixes it.
@@ -524,9 +524,9 @@ being slightly larger than its screen; a small margin fixes it.
 One card shown over the whole dashboard while its conditions hold. What's beneath can
 still be seen, but not touched: only the card on the layer works.
 
-> **Maturity: Alpha.** Does its job every day in the author's house, but hasn't been tried in many others. Expect rough edges and changes. ([The levels](https://github.com/gazoodle/casa-mia/blob/2026.11.12/docs/README.md#maturity))
+> **Maturity: Alpha.** Does its job every day in the author's house, but hasn't been tried in many others. Expect rough edges and changes. ([The levels](https://github.com/gazoodle/casa-mia/blob/2026.11.13/docs/README.md#maturity))
 
-<img src="https://raw.githubusercontent.com/gazoodle/casa-mia/2026.11.12/docs/screenshots/over-layer.webp" alt="An alarm panel card over a dashboard of lights, locks and temperatures, which shows through dimmed" width="800">
+<img src="https://raw.githubusercontent.com/gazoodle/casa-mia/2026.11.13/docs/screenshots/over-layer.webp" alt="An alarm panel card over a dashboard of lights, locks and temperatures, which shows through dimmed" width="800">
 
 - **The alarm is set:** the wall tablets show the alarm's disarm panel over everything,
   and nothing else can be pressed until it's disarmed.
@@ -604,7 +604,7 @@ To leave admins out of a layer altogether, give it a **User** condition on its V
 Whoever is signed in is still signed in: another tab, the companion app or a keyboard can
 reach whatever their Home Assistant user may. For a wall tablet that's the point; for a
 guest, pair it with a user that can do little (see Guest login's
-[How safe is it?](https://github.com/gazoodle/casa-mia/blob/2026.11.12/docs/applets/guest-login.md#how-safe-is-it)).
+[How safe is it?](https://github.com/gazoodle/casa-mia/blob/2026.11.13/docs/applets/guest-login.md#how-safe-is-it)).
 
 ### Troubleshooting
 
@@ -620,7 +620,7 @@ guest, pair it with a user that can do little (see Guest login's
 ## Part of Casa Mia
 
 Tablet Layout is part of [Casa Mia](https://github.com/gazoodle/casa-mia), where it is written and
-released. This repository is generated from Casa Mia 2026.11.12 (commit `459d2be124`) and
+released. This repository is generated from Casa Mia 2026.11.13 (commit `9c7f084355`) and
 isn't edited by hand, so a change to Tablet Layout is made in Casa Mia. A problem with it is
 reported here, in this repository's [issues](https://github.com/gazoodle/casa-mia-tablet-layout/issues).
 
